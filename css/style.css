@@ -301,11 +301,8 @@ footer {
         -ms-flex-pack: center;
         justify-content: center;
         line-height: 1.5rem; }
-      footer ul .kontaktuppgifter img {
-        height: 0.6rem;
-        width: 0.6rem;
-        margin-right: 0.3rem;
-        margin-bottom: 0.3rem; }
+        footer ul li img {
+          visibility: hidden; }
     footer .social-logos {
       padding-left: 7rem;
       padding-right: 7rem;
