@@ -64,9 +64,8 @@ h4 {
 		position: absolute;
         width: 30%;
         padding-left: 3rem;
-        margin-top: -0.4rem;
-        
-	}
+        margin-top: -0.6rem;    
+	    }
     
     
      
@@ -75,8 +74,6 @@ header {
     position: relative;
     padding: 2.5rem 0;
    
-    
-    
 	h1 {
 		margin: 0;
 		text-indent: -10000px;
@@ -86,6 +83,10 @@ header {
 		float: left;
 	}
 	nav {
+        position: relative;
+        margin-left: 20rem;
+        margin-top: -5.3rem;
+        padding-right: 5rem;
 		float: right;
 		
 		h2 {
@@ -272,6 +273,7 @@ footer {
 @media screen and (max-width: 768px) {
 	header {
 		nav {
+            position: relative;
 			float: none;
 			li {
 				margin-left: 0;
@@ -315,8 +317,11 @@ footer {
 	header {
         padding: 2.5rem 0;
 	    position: relative;
+        
           
         nav {
+            margin-left: 0rem;
+            margin-top: 0rem;
 			li {
 				float: none;
 				width: 100%;
