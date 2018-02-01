@@ -53,33 +53,30 @@ h4 {
 }//reset end
 
 .header-container{
+    
+    position: relative;
     background: $greyLight;
-    background: -moz-linear-gradient(top, #fff 40%, #e7e7e7 100%);
-    background: -webkit-linear-gradient(top, #fff 40%, #e7e7e7 100%);
-    background: linear-gradient(top, #fff 40%, #e7e7e7 100%);
-    height: 100%;
-    img {
-		position: relative;
-		
+    background: -moz-linear-gradient(top, #fff 1%, #e7e7e7 100%);
+    background: -webkit-linear-gradient(top, #fff 1%, #e7e7e7 100%);
+    background: linear-gradient(top, #fff 1%, #e7e7e7 100%);
+    height: 6rem;
+     img {
+		position: absolute;
+        width: 30%;
+        padding-left: 3rem;
+        margin-top: -0.4rem;
+        
 	}
+    
+    
+     
 }
-
-
-
 header {
-	/*background: $greyLight;
-    background: -moz-linear-gradient(top, #fff 40%, #e7e7e7 100%);
-    background: -webkit-linear-gradient(top, #fff 40%, #e7e7e7 100%);
-    background: linear-gradient(top, #fff 40%, #e7e7e7 100%);*/
-	padding: 2.5rem 0;
-	position: relative;
-	img {
-		position: relative;
-		width: 25%;
-		top: 1.2rem;
-		left: 2.1rem;
-		margin-bottom: 0;
-	}
+    position: relative;
+    padding: 2.5rem 0;
+   
+    
+    
 	h1 {
 		margin: 0;
 		text-indent: -10000px;
@@ -90,7 +87,7 @@ header {
 	}
 	nav {
 		float: right;
-		position: relative;
+		
 		h2 {
 			line-height: 0;
 			margin: 0;
@@ -122,6 +119,11 @@ header {
 		content: "";
 		clear: both;
 	}
+    
+    h1.logo {
+			float: none;
+			margin: 0 auto 1rem;
+		}
 }//header end
 
 
@@ -295,7 +297,24 @@ footer {
 
 @media screen and (max-width: 480px) {
     
+    .header-container{
+    background: $greyLight;
+    background: -moz-linear-gradient(top, #fff 40%, #e7e7e7 100%);
+    background: -webkit-linear-gradient(top, #fff 40%, #e7e7e7 100%);
+    background: linear-gradient(top, #fff 40%, #e7e7e7 100%);
+    height: 100%;
+    //height: 11.5rem;
+    img {
+		position: relative;
+        width: 95%;
+        padding-left: 0rem;
+        margin-top: 0rem;
+	}
+}
+    
 	header {
+        padding: 2.5rem 0;
+	    position: relative;
           
         nav {
 			li {
