@@ -66,15 +66,13 @@ h4 {
         padding-left: 3rem;
         margin-top: -0.6rem;    
 	    }
-    
-    
-     
+       
 }
+
 header {
     position: relative;
     padding: 2.5rem 0;
-   
-	h1 {
+    h1 {
 		margin: 0;
 		text-indent: -10000px;
 		background-position: center;
@@ -82,11 +80,12 @@ header {
 		background-size: contain;
 		float: left;
 	}
-	nav {
+	
+    nav {
         position: relative;
-        margin-left: 20rem;
-        margin-top: -5.3rem;
-        padding-right: 5rem;
+        margin-left: 15rem;
+        margin-top: -5.5rem;
+        margin-right: 4.5rem;
 		float: right;
 		
 		h2 {
@@ -101,43 +100,63 @@ header {
 		li {
 			list-style-type: none;
 			float: left;
-			margin-left: 1.25rem;
+			margin-left: 1.40rem;
 			margin-top: 0.625rem;
-		}
-		li.tw {
-			list-style-type: none;
-			float: left;
-			margin-left: 1.25rem;
-			margin-top: 0.625rem;
-		}
-		a {
-			text-decoration: none;
-			color: $blue;
-		}
-	}
-	&:after {
+        }
+        a {
+           text-decoration: none;
+           color: $blue;
+            
+            } 
+        .fb img{
+            margin-top: -14px;
+            visibility: visible;
+            width: 2rem;
+            }
+            .tw img{
+            margin-top: -12px;
+            visibility: visible;
+            width: 2rem;
+        }
+       
+        .in img{
+            margin-top: -14px;
+            visibility: visible;
+            width: 2rem;    
+        }     
+        
+    }
+        
+
+&:after {
 		display: block;
 		content: "";
 		clear: both;
-	}
+        }
     
     h1.logo {
 			float: none;
 			margin: 0 auto 1rem;
-		}
+		    }
+
 }//header end
 
 
 
+
+
 .section-b {
+    display: flex;
     padding-top: 0.75rem;
 	box-sizing: border-box;
 	ul {
+        flex: column;
 		list-style: none;
 		margin: 0;
 		padding: 0;
 	}
 	li {
+        
 		margin-bottom: 1em;
 		background: $white;
 		color: $white;
@@ -149,11 +168,21 @@ header {
 
 .card-content {
 	padding: 1em;
+    
+   
+    
 }
 
 .card {
+    flex: 1;
 	margin: 0 auto;
+    
 }//.section-b end
+
+
+
+
+
 
 
 
@@ -292,8 +321,9 @@ footer {
 
 .open {
       height: auto;
-     padding-top: 2rem;
-			}
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      }
 
 
 
@@ -318,15 +348,32 @@ footer {
         padding: 2.5rem 0;
 	    position: relative;
         
+        
           
         nav {
             margin-left: 0rem;
             margin-top: 0rem;
+            padding-right: 0rem;
+            margin-right: 0rem;
+            img{
+            margin-top: 0;
+            margin-left: 0;
+            visibility: hidden;
+            }
 			li {
 				float: none;
 				width: 100%;
 				margin: 0;
-                	
+                a.fb{
+                    padding: 0;
+                }
+                a.tw{
+                   padding: 0; 
+                }
+                a.in{
+                   padding: 0; 
+                }
+                
 				a {
 					display: block;
 					text-align: center;
@@ -357,6 +404,27 @@ footer {
 				overflow: hidden;
 				background-color: $blue;
 			}
+            
+            .fb img{
+            margin-top: -10px;
+            visibility: hidden;
+            padding-left: 1rem;
+            width: 3rem;
+            
+        }
+        
+        .tw img{
+            margin-top: -12px;
+            visibility: hidden;
+            width: 2.4rem;
+        }
+       
+        .in img{
+            margin-top: -14px;
+            visibility: hidden;
+            width: 2.2rem;
+            
+        }
 			 
             
 		}
@@ -381,6 +449,35 @@ footer {
 		cursor: pointer;
 	}
     
+    
+    
+    .section-b {
+    padding-top: 0.75rem;
+	box-sizing: border-box;
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		margin-bottom: 1em;
+		background: $white;
+		color: $white;
+	}
+    p{
+        line-height: 1.5;
+    }
+}
+
+    
+.card-content {
+	padding: 1em;
+}
+
+.card {
+	margin: 0 auto;
+}//.section-b end
+
     
     
 	footer {

@@ -68,9 +68,9 @@ header {
     float: left; }
   header nav {
     position: relative;
-    margin-left: 20rem;
-    margin-top: -5.3rem;
-    padding-right: 5rem;
+    margin-left: 15rem;
+    margin-top: -5.5rem;
+    margin-right: 4.5rem;
     float: right; }
     header nav h2 {
       line-height: 0;
@@ -82,16 +82,23 @@ header {
     header nav li {
       list-style-type: none;
       float: left;
-      margin-left: 1.25rem;
-      margin-top: 0.625rem; }
-    header nav li.tw {
-      list-style-type: none;
-      float: left;
-      margin-left: 1.25rem;
+      margin-left: 1.40rem;
       margin-top: 0.625rem; }
     header nav a {
       text-decoration: none;
       color: #29a29f; }
+    header nav .fb img {
+      margin-top: -14px;
+      visibility: visible;
+      width: 2rem; }
+    header nav .tw img {
+      margin-top: -12px;
+      visibility: visible;
+      width: 2rem; }
+    header nav .in img {
+      margin-top: -14px;
+      visibility: visible;
+      width: 2rem; }
   header:after {
     display: block;
     content: "";
@@ -101,10 +108,16 @@ header {
     margin: 0 auto 1rem; }
 
 .section-b {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding-top: 0.75rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
   .section-b ul {
+    -webkit-box-flex: column;
+    -ms-flex: column;
+    flex: column;
     list-style: none;
     margin: 0;
     padding: 0; }
@@ -119,6 +132,9 @@ header {
   padding: 1em; }
 
 .card {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   margin: 0 auto; }
 
 .container {
@@ -229,7 +245,8 @@ footer {
 
 .open {
   height: auto;
-  padding-top: 2rem; }
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
 
 @media screen and (max-width: 480px) {
   .header-container {
@@ -251,11 +268,23 @@ footer {
     padding-bottom: 0; }
     header nav {
       margin-left: 0rem;
-      margin-top: 0rem; }
+      margin-top: 0rem;
+      padding-right: 0rem;
+      margin-right: 0rem; }
+      header nav img {
+        margin-top: 0;
+        margin-left: 0;
+        visibility: hidden; }
       header nav li {
         float: none;
         width: 100%;
         margin: 0; }
+        header nav li a.fb {
+          padding: 0; }
+        header nav li a.tw {
+          padding: 0; }
+        header nav li a.in {
+          padding: 0; }
         header nav li a {
           display: block;
           text-align: center;
@@ -282,6 +311,19 @@ footer {
         height: 0;
         overflow: hidden;
         background-color: #29a29f; }
+      header nav .fb img {
+        margin-top: -10px;
+        visibility: hidden;
+        padding-left: 1rem;
+        width: 3rem; }
+      header nav .tw img {
+        margin-top: -12px;
+        visibility: hidden;
+        width: 2.4rem; }
+      header nav .in img {
+        margin-top: -14px;
+        visibility: hidden;
+        width: 2.2rem; }
     header .wrapper {
       padding: 0;
       width: 100%; }
@@ -295,6 +337,24 @@ footer {
     height: 3.1rem;
     background: url(../images/burger.png) no-repeat 97% center;
     cursor: pointer; }
+  .section-b {
+    padding-top: 0.75rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    .section-b ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+    .section-b li {
+      margin-bottom: 1em;
+      background: #fff;
+      color: #fff; }
+    .section-b p {
+      line-height: 1.5; }
+  .card-content {
+    padding: 1em; }
+  .card {
+    margin: 0 auto; }
   footer {
     background: #29a29f;
     padding: 2.5rem 0;
