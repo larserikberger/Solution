@@ -37,9 +37,9 @@ h4 {
 
 .wrapper {
   width: 98%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 2%; }
+  padding: 1%; }
 
 .header-container {
   position: relative;
@@ -54,7 +54,7 @@ h4 {
     position: absolute;
     width: 30%;
     padding-left: 3rem;
-    margin-top: -0.6rem; }
+    margin-top: -0.9rem; }
 
 header {
   position: relative;
@@ -107,40 +107,75 @@ header {
     float: none;
     margin: 0 auto 1rem; }
 
-.section-b {
+.container-1 {
+  margin-top: -1.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 0.75rem;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-  .section-b ul {
-    -webkit-box-flex: column;
-    -ms-flex: column;
-    flex: column;
-    list-style: none;
-    margin: 0;
-    padding: 0; }
-  .section-b li {
-    margin-bottom: 1em;
-    background: #fff;
-    color: #fff; }
-  .section-b p {
-    line-height: 1.5; }
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 0.6rem; }
+  .container-1 img {
+    width: 100%;
+    padding-right: 0.5rem; }
 
-.card-content {
-  padding: 1em; }
+.bild {
+  -webkit-box-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+  padding-right: 1rem; }
 
-.card {
+.text {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  margin: 0 auto; }
+  line-height: 1.5;
+  padding-right: 2rem;
+  padding-left: 0.3rem;
+  padding-top: 1rem; }
 
+/*
+
+.section-b {
+    display: flex;
+    padding-top: 0.75rem;
+	box-sizing: border-box;
+	ul {
+        flex: column;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	li {
+        
+		margin-bottom: 1em;
+		background: $white;
+		color: $white;
+	}
+    p{
+        line-height: 1.5;
+    }
+}
+
+.card-content {
+	padding: 1em;
+    
+   
+    
+}
+
+.card {
+    flex: 1;
+	margin: 0 auto;
+    
+}//.section-b end
+
+*/
 .container {
   max-width: 1170px;
   font-size: 0.7em;
-  margin-bottom: 4rem; }
+  padding-top: 1.8rem; }
 
 .contact form {
   display: grid;
@@ -179,6 +214,7 @@ header {
     background-color: #eeeeee; }
   .contact form textarea {
     width: 100%;
+    height: 10.8rem;
     padding: 1em;
     border: 0.063rem dotted #4e4e4e;
     background-color: #eeeeee; }
@@ -204,13 +240,13 @@ footer {
     justify-content: center;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    padding-left: 13rem;
-    padding-right: 13rem; }
+    padding-left: 21rem;
+    padding-right: 21rem;
+    margin-top: -0.9rem; }
   footer .kontaktuppgifter img {
-    height: 1rem;
-    width: 1rem;
+    width: 0.8rem;
     margin-right: 0.3rem;
-    margin-top: 0.2rem; }
+    margin-top: 0.5rem; }
   footer li {
     color: #fff; }
   footer .social-logos {
