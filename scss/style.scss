@@ -1,13 +1,6 @@
-//Variables
-
-$svart: #4e4e4e;
-$blue: #29a29f;
-$blackDark: #333;
-$white: #fff;
-$greyLight: #e7e7e7;
-$greySuperLight: #eeeeee;
-
-
+//@import "reset";
+@import "variables";
+@import "mixins";
 
 * {
 	font-family: Arial;
@@ -50,10 +43,10 @@ h4 {
 	max-width: 1400px;
 	margin: 0 auto;
 	padding: 1%;
-}//reset end
+}
+
 
 .header-container{
-    
     position: relative;
     background: $greyLight;
     background: -moz-linear-gradient(top, #fff 1%, #e7e7e7 100%);
@@ -65,9 +58,9 @@ h4 {
         width: 30%;
         padding-left: 3rem;
         margin-top: -0.9rem;    
-	    }
-       
-}
+	    }      
+        }
+
 
 header {
     position: relative;
@@ -79,15 +72,13 @@ header {
 		background-size: cover;
 		background-size: contain;
 		float: left;
-	}
-	
+	    }
     nav {
         position: relative;
-        margin-left: 15rem;
+        margin-right: 4.5rem;
         margin-top: -5.5rem;
         margin-right: 4.5rem;
-		float: right;
-		
+		float: right;	
 		h2 {
 			line-height: 0;
 			margin: 0;
@@ -111,18 +102,17 @@ header {
         .fb img{
             margin-top: -14px;
             visibility: visible;
-            width: 2rem;
+            width: 1rem;
             }
             .tw img{
             margin-top: -12px;
             visibility: visible;
-            width: 2rem;
-        }
-       
+            width: 1rem;
+            }
         .in img{
             margin-top: -14px;
             visibility: visible;
-            width: 2rem;    
+            width: 1rem;    
         }     
         
     }
@@ -141,10 +131,8 @@ header {
 
 }//header end
 
-.container-1 div{
-    //border: 1px #ccc solid;
-    //padding: 0.5rem;  
-}
+
+//main start
 
 .container-1{
     margin-top: -1.75rem;
@@ -158,76 +146,24 @@ header {
 }
 
 .bild{
-   flex: 2;
+    flex: 2;
     padding-right: 1rem;    
-}
+    }
 
 .text{
    flex: 1;
    line-height: 1.5;
    padding-right: 2rem;
    padding-left: 0.3rem;
-   padding-top: 1rem;
-    p{
-        
-    }
+   padding-top: 1rem;   
 }//main end
 
 
+//contact start
 
-
-
-
-
-
-
-/*
-
-.section-b {
-    display: flex;
-    padding-top: 0.75rem;
-	box-sizing: border-box;
-	ul {
-        flex: column;
-		list-style: none;
-		margin: 0;
-		padding: 0;
-	}
-	li {
-        
-		margin-bottom: 1em;
-		background: $white;
-		color: $white;
-	}
-    p{
-        line-height: 1.5;
-    }
-}
-
-.card-content {
-	padding: 1em;
-    
-   
-    
-}
-
-.card {
-    flex: 1;
-	margin: 0 auto;
-    
-}//.section-b end
-
-*/
-
-
-
-
-
-
-
-.container {
+.container  {
 	max-width: 1170px;
-	font-size: 0.7em;
+	font-size: 0.8em;
     //margin-bottom: 4rem;
     padding-top: 1.8rem;
 }
@@ -278,16 +214,16 @@ header {
             background-color: $greySuperLight;
 		}
 	}
-}//.contact end
-
-
-
-label {
+    
+    label {
 	text-align: left;
 	padding-bottom: 0.5rem;
 	font-size: 0.7rem;
 }
-
+    
+    
+    
+}//.contact end
 
 
 footer {
@@ -334,38 +270,178 @@ footer {
     }// footer end
 
 
+// MEDIA SCREENS
+
+
 @media screen and (max-width: 960px){
+    
+    footer {
+    ul{
+    padding-left: 8rem;
+    padding-right: 8rem;
+    margin-top: -0.8rem;
+    }
+    }
+    
+    .header-container{
+   
+     img {
+		width: 37%;
+        padding-left: 3rem;
+        margin-top: -0.4rem;    
+	    }      
+        }    
+    
+    header {
+    
+    nav {
+        margin-left: 5rem;
+        margin-top: -5.5rem;
+        margin-right: 1.9rem;   
+		li {
+			margin-top: 0.7rem;
+            margin-left: 1rem;
+           }
+        }
+        }
+    
+    .container {
+      padding-top: 0rem; 
+         }
+
+.contact {
+    form {
+		grid-gap: 0.5rem;
+        line-height: 0.4rem;
+		
+		input {
+			height: 1.7rem;
+			padding: 0.5em;
+			  }
+		textarea {
+			height: 8.4rem;
+			}
+	      }
+          }
+    
+    
+    .text{
+   flex: 1;
+   line-height: 1.4rem;
+   padding-right: 0rem;
+   padding-left: 0.4rem;
+   padding-top: 0rem;
+   margin-left: 0rem;
+    h3{
+        margin-bottom: 0.5rem;
+    }   
+    }
+    
+    .bild{
+   padding-right: 0rem;    
+    }
+    
     
 }
 
 
 
+
 @media screen and (max-width: 768px) {
-	header {
-		nav {
-            position: relative;
-			float: none;
-			li {
-				margin-left: 0;
-				width: 16.66%;
-				text-align: center;
-				font-size: 0.875rem;
-			}
-		}
-		h1.logo {
-			float: none;
-			margin: 0 auto 1rem;
-		}
-	}
+    
+    
+.header-container{
+        img {
+		width: 35%;
+        padding-left: 1.3rem;
+        margin-top: 0.1rem;    
+	    }     
+        }
+    
+header {
+    
+    nav {
+        margin-left: 5rem;
+        margin-top: -5.5rem;
+        margin-right: 1.2rem;   
+		li {
+			margin-top: 0.7rem;
+            margin-left: 1rem;
+           }
+        }
+        }
+
+
+.container-1{
+    margin-top: -2.1rem;
+    justify-content: center;
+    margin-bottom: 0rem;
+    
+    
 }
 
+.bild{
+   padding-right: 0rem;    
+}
 
+.text{
+   flex: 1;
+   line-height: 1.4rem;
+   padding-right: 0rem;
+   padding-left: 0.4rem;
+   padding-top: 0rem;
+   margin-left: 0rem;
+    h3{
+        margin-bottom: 0.5rem;
+    }
+   
+}//main end
+ 
+    
+.container {
+      padding-top: 0rem; 
+         }
+
+.contact {
+    form {
+		grid-gap: 0.5rem;
+        line-height: -1rem;
+		
+		input {
+			height: 1.7rem;
+			padding: 0.5em;
+			  }
+		textarea {
+			height: 4.57rem;
+			}
+	      }
+          }
+
+
+footer {
+	ul{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: -0.6rem;
+    }
+    .kontaktuppgifter img{
+        width: 0.8rem;
+        margin-right: 0.3rem;
+        margin-top: 0.5rem;
+        }
+       
+    }
+       
+    
+}// 768px MEDIA END
+
+
+ 
 .open {
       height: auto;
       padding-top: 2rem;
       padding-bottom: 2rem;
       }
-
 
 
 @media screen and (max-width: 480px) {
@@ -388,14 +464,12 @@ footer {
 	header {
         padding: 2.5rem 0;
 	    position: relative;
-        
-        
-          
-        nav {
+           nav {
             margin-left: 0rem;
             margin-top: 0rem;
             padding-right: 0rem;
             margin-right: 0rem;
+            float: none;
             img{
             margin-top: 0;
             margin-left: 0;
@@ -463,12 +537,12 @@ footer {
         .in img{
             margin-top: -14px;
             visibility: hidden;
-            width: 2.2rem;
-            
+            width: 2.2rem;      
         }
 			 
             
 		}
+        
 		.wrapper {
 			padding: 0;
 			width: 100%;
@@ -480,8 +554,7 @@ footer {
 			top: 1rem;
 			left: 0.6rem;
 		}
-	}
-    
+	}    
 
 	#burger-nav {
 		width: 100%;
@@ -489,56 +562,63 @@ footer {
 		background: url(../images/burger.png) no-repeat 97% center;
 		cursor: pointer;
 	}
-    
-    
-    
-    .section-b {
-    padding-top: 0.75rem;
-	box-sizing: border-box;
-	ul {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-	}
-	li {
-		margin-bottom: 1em;
-		background: $white;
-		color: $white;
-	}
-    p{
-        line-height: 1.5;
+          
+
+.container-1{
+    margin-top: 0.3rem;
+    display: flex;
+    display: block;
+    margin-bottom: 2rem;
+    img{
+        width: 100%;
+        padding-right: 0rem;
     }
 }
 
-    
-.card-content {
-	padding: 1em;
+.bild{
+   padding-right: 0rem;
+   padding: 0;
 }
 
-.card {
-	margin: 0 auto;
-}//.section-b end
+.text{
+   line-height: 1.5;
+   padding-left: 0rem;
+
+   
+ }//main end
+    
+    
+    .contact {
+    
+	form {
+		grid-gap: 0.5rem;
+        line-height: 0.5rem;
+		
+	
+		input {
+			
+            height: 2.5rem;
+			
+            
+		}
+		textarea {
+			
+            height: 12rem;
+		}
+	}
+}//.contact end
 
     
-    
+
 	footer {
-		background: $blue;
-		padding: 2.5rem 0;
-		position: relative;
-		height: 14.375rem;
-        overflow: hidden;
+		height: 15rem;
+        
         ul {
 			flex-direction: column;
-			margin-top: 1.8rem;
-            padding: 0;
-            li {
-			display: flex;
-			width: 100%;
-			color: $white;
-			font-size: 0.875rem;
-			text-decoration: none;
-			justify-content: center;
-			line-height: 1.5rem;
+			margin-top: 1.6rem;
+            
+             li {
+			text-align: center;
                 img{
                   visibility: hidden;
                 }
@@ -546,6 +626,7 @@ footer {
            
         }
             .social-logos{
+            margin-top: 1.2rem;
             padding-left: 7rem;
             padding-right: 7rem;
             display: flex;
@@ -565,8 +646,9 @@ footer {
             }
         }
         
-        
-        
-	}
+          
+
+}
+
 }
 

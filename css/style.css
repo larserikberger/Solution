@@ -68,7 +68,7 @@ header {
     float: left; }
   header nav {
     position: relative;
-    margin-left: 15rem;
+    margin-right: 4.5rem;
     margin-top: -5.5rem;
     margin-right: 4.5rem;
     float: right; }
@@ -90,15 +90,15 @@ header {
     header nav .fb img {
       margin-top: -14px;
       visibility: visible;
-      width: 2rem; }
+      width: 1rem; }
     header nav .tw img {
       margin-top: -12px;
       visibility: visible;
-      width: 2rem; }
+      width: 1rem; }
     header nav .in img {
       margin-top: -14px;
       visibility: visible;
-      width: 2rem; }
+      width: 1rem; }
   header:after {
     display: block;
     content: "";
@@ -135,46 +135,9 @@ header {
   padding-left: 0.3rem;
   padding-top: 1rem; }
 
-/*
-
-.section-b {
-    display: flex;
-    padding-top: 0.75rem;
-	box-sizing: border-box;
-	ul {
-        flex: column;
-		list-style: none;
-		margin: 0;
-		padding: 0;
-	}
-	li {
-        
-		margin-bottom: 1em;
-		background: $white;
-		color: $white;
-	}
-    p{
-        line-height: 1.5;
-    }
-}
-
-.card-content {
-	padding: 1em;
-    
-   
-    
-}
-
-.card {
-    flex: 1;
-	margin: 0 auto;
-    
-}//.section-b end
-
-*/
 .container {
   max-width: 1170px;
-  font-size: 0.7em;
+  font-size: 0.8em;
   padding-top: 1.8rem; }
 
 .contact form {
@@ -219,7 +182,7 @@ header {
     border: 0.063rem dotted #4e4e4e;
     background-color: #eeeeee; }
 
-label {
+.contact label {
   text-align: left;
   padding-bottom: 0.5rem;
   font-size: 0.7rem; }
@@ -266,18 +229,95 @@ footer {
       flex-basis: 1%;
       visibility: hidden; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
+  footer ul {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    margin-top: -0.8rem; }
+  .header-container img {
+    width: 37%;
+    padding-left: 3rem;
+    margin-top: -0.4rem; }
   header nav {
-    position: relative;
-    float: none; }
+    margin-left: 5rem;
+    margin-top: -5.5rem;
+    margin-right: 1.9rem; }
     header nav li {
-      margin-left: 0;
-      width: 16.66%;
-      text-align: center;
-      font-size: 0.875rem; }
-  header h1.logo {
-    float: none;
-    margin: 0 auto 1rem; } }
+      margin-top: 0.7rem;
+      margin-left: 1rem; }
+  .container {
+    padding-top: 0rem; }
+  .contact form {
+    grid-gap: 0.5rem;
+    line-height: 0.4rem; }
+    .contact form input {
+      height: 1.7rem;
+      padding: 0.5em; }
+    .contact form textarea {
+      height: 8.4rem; }
+  .text {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    line-height: 1.4rem;
+    padding-right: 0rem;
+    padding-left: 0.4rem;
+    padding-top: 0rem;
+    margin-left: 0rem; }
+    .text h3 {
+      margin-bottom: 0.5rem; }
+  .bild {
+    padding-right: 0rem; } }
+
+@media screen and (max-width: 768px) {
+  .header-container img {
+    width: 35%;
+    padding-left: 1.3rem;
+    margin-top: 0.1rem; }
+  header nav {
+    margin-left: 5rem;
+    margin-top: -5.5rem;
+    margin-right: 1.2rem; }
+    header nav li {
+      margin-top: 0.7rem;
+      margin-left: 1rem; }
+  .container-1 {
+    margin-top: -2.1rem;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 0rem; }
+  .bild {
+    padding-right: 0rem; }
+  .text {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    line-height: 1.4rem;
+    padding-right: 0rem;
+    padding-left: 0.4rem;
+    padding-top: 0rem;
+    margin-left: 0rem; }
+    .text h3 {
+      margin-bottom: 0.5rem; }
+  .container {
+    padding-top: 0rem; }
+  .contact form {
+    grid-gap: 0.5rem;
+    line-height: -1rem; }
+    .contact form input {
+      height: 1.7rem;
+      padding: 0.5em; }
+    .contact form textarea {
+      height: 4.57rem; }
+  footer ul {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: -0.6rem; }
+  footer .kontaktuppgifter img {
+    width: 0.8rem;
+    margin-right: 0.3rem;
+    margin-top: 0.5rem; } }
 
 .open {
   height: auto;
@@ -306,7 +346,8 @@ footer {
       margin-left: 0rem;
       margin-top: 0rem;
       padding-right: 0rem;
-      margin-right: 0rem; }
+      margin-right: 0rem;
+      float: none; }
       header nav img {
         margin-top: 0;
         margin-left: 0;
@@ -373,52 +414,43 @@ footer {
     height: 3.1rem;
     background: url(../images/burger.png) no-repeat 97% center;
     cursor: pointer; }
-  .section-b {
-    padding-top: 0.75rem;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box; }
-    .section-b ul {
-      list-style: none;
-      margin: 0;
-      padding: 0; }
-    .section-b li {
-      margin-bottom: 1em;
-      background: #fff;
-      color: #fff; }
-    .section-b p {
-      line-height: 1.5; }
-  .card-content {
-    padding: 1em; }
-  .card {
-    margin: 0 auto; }
+  .container-1 {
+    margin-top: 0.3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: block;
+    margin-bottom: 2rem; }
+    .container-1 img {
+      width: 100%;
+      padding-right: 0rem; }
+  .bild {
+    padding-right: 0rem;
+    padding: 0; }
+  .text {
+    line-height: 1.5;
+    padding-left: 0rem; }
+  .contact form {
+    grid-gap: 0.5rem;
+    line-height: 0.5rem; }
+    .contact form input {
+      height: 2.5rem; }
+    .contact form textarea {
+      height: 12rem; }
   footer {
-    background: #29a29f;
-    padding: 2.5rem 0;
-    position: relative;
-    height: 14.375rem;
-    overflow: hidden; }
+    height: 15rem; }
     footer ul {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
-      margin-top: 1.8rem;
-      padding: 0; }
+      margin-top: 1.6rem; }
       footer ul li {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        width: 100%;
-        color: #fff;
-        font-size: 0.875rem;
-        text-decoration: none;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        line-height: 1.5rem; }
+        text-align: center; }
         footer ul li img {
           visibility: hidden; }
     footer .social-logos {
+      margin-top: 1.2rem;
       padding-left: 7rem;
       padding-right: 7rem;
       display: -webkit-box;
