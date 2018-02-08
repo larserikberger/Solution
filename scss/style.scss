@@ -84,9 +84,8 @@ header {
     }
     nav {
         position: relative;
-        margin-right: 4.5rem;
+        margin-right: 2.4rem;
         margin-top: -5.5rem;
-        margin-right: 4.5rem;
         float: right;
         h2 {
             line-height: 0;
@@ -105,6 +104,7 @@ header {
         }
         a {
             text-decoration: none;
+            font-size: 1.2rem;
             color: $blue;
 
         }
@@ -139,21 +139,28 @@ header {
     }
 
 } //header end
+
+
 //main start
+
+/*
+
+@supports (display: flex) {
+ 
 .container-1 {
     margin-top: -1.75rem;
     display: flex;
     justify-content: center;
     margin-bottom: 0.6rem;
-    img {
-        width: 100%;
-        padding-right: 0.5rem;
-    }
+   
 }
 
 .bild {
     flex: 2;
     padding-right: 1rem;
+     img {
+        width: 100%;    
+    }
 }
 
 .text {
@@ -162,10 +169,59 @@ header {
     padding-right: 2rem;
     padding-left: 0.3rem;
     padding-top: 1rem;
-} //main end
+} 
+    
+ }//main end
+
+*/
+
+
+.container-1 {
+    margin-top: -1.75rem;
+    margin-bottom: 0.6rem;
+    img {
+        float: left; 
+        width: 100%;
+        margin-right: 1.5rem;
+    }
+    
+    .bild{
+        width: 61.8%;
+    }
+    
+    
+    .text {
+    padding-top: 1.5rem;
+    }
+    
+    p {
+        line-height: 1.5rem;
+        padding-top: 1rem;
+    }
+    
+    .kundloggor{
+        img{
+            float: right;
+            width: 36%;
+            margin: 0;
+            margin-right: 0.2rem;
+            padding-top: 0rem;    
+            }
+    }
+    
+     &:after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+
+ }
+
+
+
 //contact start
+
 .container {
-    max-width: 1170px;
     font-size: 0.8em;
     padding-top: 1.8rem;
 }
@@ -175,6 +231,7 @@ header {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 1rem;
+        margin: 0;
         label {
             display: block;
         }
@@ -210,7 +267,7 @@ header {
         }
         textarea {
             width: 100%;
-            height: 10.8rem;
+            height: 12.87rem;
             padding: 1em;
             border: 0.063rem dotted $svart;
             background-color: $greySuperLight;
@@ -220,12 +277,16 @@ header {
     label {
         text-align: left;
         padding-bottom: 0.5rem;
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
-
-
-
+    
 } //.contact end
+
+
+/*
+
+@supports (display: flex){
+    
 footer {
     background: $blue;
     padding: 1rem 0;
@@ -237,18 +298,19 @@ footer {
         padding: 0;
         justify-content: center;
         justify-content: space-around;
-        padding-left: 21rem;
-        padding-right: 21rem;
+        padding-left: 18rem;
+        padding-right: 18rem;
         margin-top: -0.9rem;
     }
     .kontaktuppgifter img {
-        //height: 1rem;
         width: 0.8rem;
         margin-right: 0.3rem;
-        margin-top: 0.5rem;
+        margin-left: 1rem;
+        margin-top: 0.4rem;
     }
     li {
         color: $white;
+        font-size: 1.2rem;
 
     }
 
@@ -267,20 +329,139 @@ footer {
             visibility: hidden;
         }
     }
-} // footer end
-// MEDIA SCREENS
-@media screen and (max-width: 960px) {
+} 
 
-    footer {
-        ul {
-            padding-left: 8rem;
-            padding-right: 8rem;
-            margin-top: -0.8rem;
+
+}  // footer end
+
+
+*/
+
+
+footer {
+    background: $blue;
+    padding: 1rem 0;
+    position: relative;
+    height: 6rem;
+    ul {
+        float: right;
+        list-style-type: none;
+        padding: 0;
+        padding-left: 21rem;
+        padding-right: 21rem;
+        margin-top: -0.9rem;
+    }
+    .kontaktuppgifter img {
+        width: 0.8rem;
+        margin-right: 0.3rem;
+        margin-left: 1rem;
+        margin-top: 0.4rem;
+    }
+    li {
+        color: $white;
+        float: left;
+    }
+    
+    /*
+
+    .social-logos {
+        display: flex;
+        .box-1 {
+            flex-basis: 1%;
+            visibility: hidden;
+        }
+        .box-2 {
+            flex-basis: 1%;
+            visibility: hidden;
+        }
+        .box-3 {
+            flex-basis: 1%;
+            visibility: hidden;
         }
     }
+   
+    */
+    
+} // footer end
+
+  
+
+
+
+// MEDIA SCREENS
+
+
+@media screen and (max-width: 1024px){
+       
+    .header-container{
+        img{
+        width: 35%;
+        padding-left: 3rem;
+        margin-top: -0.3rem;
+            
+        }
+    }
+     
+  header {
+      nav {
+          a {
+              font-size: 1rem;
+          }
+      }
+
+  } //header end
+    
+    
+    .contact {
+        form {
+            p {
+                padding-top: 0;
+            }
+            input {
+                height: 1.9rem;
+            }
+            textarea {
+                height: 8.1rem;
+            }
+        }
+
+        label {
+            padding-bottom: 0.1rem;
+            font-size: 0.7rem;
+        }
+
+    } //.contact end
+    
+    
+    .container-1 {
+        .kundloggor {
+            img {
+                width: 35%;
+            }
+        }
+    }
+    
+    
+    footer {
+        ul {
+            padding-left: 11.3rem;
+            padding-right: 11.3rem;
+            margin-top: -0.8srem;
+        }
+        li {
+            font-size: 0.9rem;
+        }
+    }
+    
+    
+
+} // MEDIA 1024 END
+
+@media screen and (max-width: 960px) {
+
+ 
 
     .header-container {
-
         img {
             width: 37%;
             padding-left: 3rem;
@@ -289,7 +470,6 @@ footer {
     }
 
     header {
-
         nav {
             margin-left: 5rem;
             margin-top: -5.5rem;
@@ -297,7 +477,6 @@ footer {
             li {
                 margin-top: 0.7rem;
                 margin-left: 1rem;
-
             }
         }
     }
@@ -308,6 +487,7 @@ footer {
 
     .contact {
         form {
+            margin-top: 1.5rem;
             grid-gap: 0.5rem;
             line-height: 0.4rem;
 
@@ -316,11 +496,10 @@ footer {
                 padding: 0.5em;
             }
             textarea {
-                height: 8.4rem;
+                height: 8.7rem;
             }
         }
     }
-
 
     .text {
         flex: 1;
@@ -337,10 +516,20 @@ footer {
     .bild {
         padding-right: 0rem;
     }
+    
+     footer {
+        ul {
+            padding-left: 9.3rem;
+            padding-right: 9.3rem;
+            margin-top: -0.8rem;
+        }
+        li {
+            font-size: 0.9rem;
+        }
+    }
 
 
-}
-
+}  // MEDIA 960 END
 
 
 
@@ -356,7 +545,6 @@ footer {
     }
 
     header {
-
         nav {
             margin-left: 5rem;
             margin-top: -5.5rem;
@@ -382,17 +570,16 @@ footer {
     }
 
     .text {
-        flex: 1;
-        line-height: 1.4rem;
-        padding-right: 0rem;
-        padding-left: 0.4rem;
-        padding-top: 0rem;
-        margin-left: 0rem;
         h3 {
             margin-bottom: 0.5rem;
+            font-size: 1rem;
         }
+        
+        
 
     } //main end
+    
+    
     .container {
         padding-top: 0rem;
     }
@@ -401,6 +588,7 @@ footer {
         form {
             grid-gap: 0.5rem;
             line-height: -1rem;
+            margin-top: 0.5rem;
 
             input {
                 height: 1.7rem;
@@ -413,22 +601,21 @@ footer {
     }
 
 
-    footer {
+     footer {
         ul {
-            padding-left: 2rem;
-            padding-right: 2rem;
+            padding-left: 3.7rem;
+            padding-right: 3.7rem;
             margin-top: -0.6rem;
         }
-        .kontaktuppgifter img {
-            width: 0.8rem;
-            margin-right: 0.3rem;
-            margin-top: 0.5rem;
+        li {
+            font-size: 0.9rem;
         }
-
     }
 
 
 } // 768px MEDIA END
+
+
 .open {
     height: auto;
     padding-top: 2rem;
@@ -548,12 +735,16 @@ footer {
             width: 100%;
             padding-right: 0rem;
         }
-    }
+        
+        .bild{
+        width: 100%;
+        }
+        }
 
     .bild {
         padding-right: 0rem;
         padding: 0;
-    }
+        }
 
     .text {
         line-height: 1.5;
@@ -580,44 +771,114 @@ footer {
             }
         }
     } //.contact end
-    footer {
-        height: 15rem;
+    
+/*
+    
+    @supports (display: flex) {
 
-        ul {
-            flex-direction: column;
-            margin-top: 1.6rem;
+        footer {
+            height: 15rem;
 
-            li {
-                text-align: center;
-                img {
-                    visibility: hidden;
+            ul {
+                flex-direction: column;
+
+                margin-top: 1.6rem;
+
+                li {
+                    text-align: center;
+
+                    img {
+                        visibility: hidden;
+                    }
+                }
+
+            }
+            .social-logos {
+                margin-top: 1.2rem;
+                padding-left: 7rem;
+                padding-right: 7rem;
+                display: flex;
+                justify-content: center;
+                justify-content: space-between;
+                .box-1 {
+                    flex-basis: 22%;
+                    visibility: visible;
+                }
+                .box-2 {
+                    flex-basis: 22%;
+                    visibility: visible;
+                }
+                .box-3 {
+                    flex-basis: 22%;
+                    visibility: visible;
                 }
             }
 
         }
-        .social-logos {
-            margin-top: 1.2rem;
-            padding-left: 7rem;
-            padding-right: 7rem;
-            display: flex;
+
+    }
+    
+   */
+    
+    footer {
+        height: 15rem;
+        ul {
+            float: none;
+            text-align: center;
             justify-content: center;
-            justify-content: space-between;
+            margin-top: 1.5rem;
+        }
+        .kontaktuppgifter img {
+            width: 0rem;
+            margin-right: 0rem;
+            margin-left: 0rem;
+            margin-top: 0rem;
+            visibility: hidden;
+        }
+        li {
+            float: none;
+            line-height: 1.4rem;
+        }
+        
+        
+        
+        .social-logos {
+            
+            padding-left: 7rem; 
+            padding-right: 7rem; 
+           
+            margin-top: 1.2rem;
+            margin-bottom: 5rem;
+            
             .box-1 {
-                flex-basis: 22%;
+                text-align: center;
+                float: left;
+                width: 33%;
+                height: 5rem;
+                img {
+                    width: 30%;
+                }
                 visibility: visible;
             }
             .box-2 {
-                flex-basis: 22%;
+                text-align: center;
+                float: left;
+                width: 33%;
+                img {
+                    width: 30%;
+                }
                 visibility: visible;
             }
             .box-3 {
-                flex-basis: 22%;
+                text-align: center;
+                float: left;
+                width: 33%;
+                img {
+                    width: 30%;
+                }
                 visibility: visible;
             }
         }
-
-
-
     }
-
+     
 }
