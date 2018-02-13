@@ -144,7 +144,7 @@ header {
 //main start flex
 
 /*
- 
+
 @supports (display: flex) {
  
 .container-1 {
@@ -159,9 +159,10 @@ header {
     flex: 2;
     padding-right: 1.6rem;
     
+   
     
      img {
-        width: 100%;    
+        width: 100%;      
     }
 }
 
@@ -169,14 +170,17 @@ header {
     flex: 1;
     line-height: 1.5;
     padding-top: 2rem;
+    
 } 
     
  }//main end flex
 
-
 */
 
+
 .container-1 {
+    
+        
     margin-top: -1.75rem;
     margin-bottom: 0.7rem;
     img {
@@ -185,25 +189,41 @@ header {
         margin-right: 1.5rem;
     }
     .bild{
-        width: 61.8%;
+        width: 60.7%;
     }
-    .text {
-    padding-top: 1.5rem;
-    }
+    
+    
+    .kunder {
+        padding-top: 1.5rem;
+        padding-left: 0.7rem;
+        width: 28%;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-column-gap: 2rem;
+        grid-row-gap: 1.3rem;
+        div .kunder {
+        
+        }
+        img {
+            width: 100%;
+            margin-right: 0rem;
+        }
+        
+       
+        
+    } 
     
     p {
         line-height: 1.5rem;
         padding-top: 1rem;
     }
-    .kundloggor{
-        img{
-            float: right;
-            width: 36%;
-            margin: 0;
-            margin-right: 0.2rem;
-            padding-top: 0rem;    
-            }
-    }
+    
+    
+   
+    
+    
+    
     
      &:after {
         display: block;
@@ -262,7 +282,7 @@ header {
         }
         textarea {
             width: 100%;
-            height: 12.8rem;
+            height: 12.1rem;
             padding: 1em;
             border: 0.063rem dotted $svart;
             background-color: $greySuperLight;
@@ -280,6 +300,8 @@ header {
 
 
 // footer start flex
+
+/*
 
 @supports (display: flex){
     
@@ -329,8 +351,8 @@ footer {
 }  // footer end flex
 
 
+*/
 
-/*
 
 footer {
     background: $blue;
@@ -384,7 +406,7 @@ footer {
     } // footer end
 
   
-*/
+
 
 
 
@@ -420,6 +442,24 @@ footer {
             
             margin-right: 1.1rem;
         }
+        
+        .kundloggor {
+        padding-top: 1rem;
+        //padding-left: 0.2rem;
+        width: 28%;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-column-gap: 2rem;
+        grid-row-gap: 1.3rem;
+       
+        img {
+            width: 100%;
+            margin-right: 0rem;
+        }
+       
+    } 
+        
     }
     
     .contact {
@@ -443,14 +483,7 @@ footer {
     } //.contact end
      
     
-    .container-1 {
-        .kundloggor {
-            img {
-                width: 35%;
-            }
-        }
-    }
-    
+   
     
     footer {
         ul {
